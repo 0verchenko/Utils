@@ -1,0 +1,8 @@
+# Click on element from elements list by element text
+def select(self, text):
+  wd = self.driver
+  elements = wd.find_elements_by_xpath("xpath")
+  for el in elements:
+    if text in el.text:
+      el.click()
+      break
